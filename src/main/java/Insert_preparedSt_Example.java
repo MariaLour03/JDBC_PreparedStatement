@@ -27,7 +27,6 @@ public class Insert_preparedSt_Example {
             int affectedRows = prepStmt.executeUpdate();
             System.out.println(affectedRows + " row(s) affected !!");
 
-
             /* ------ Lets pull data from the database for an inserted record ------*/
             // Query which needs parameters
             prepStmt = con.prepareStatement("select * from employees where employeeNumber = ? ");
